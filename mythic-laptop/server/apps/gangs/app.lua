@@ -2,7 +2,8 @@ local GangInvitations = {}
 -- Application: Unknown (Gangs)
 CreateThread(function()
     while not _Ready do
-        Wait(100)
+        Wait(1000)
+	print("Not Ready!!, you need to add `_Ready = true` on `mythic-laptop/server/main.lua` in this function `RetrieveComponents()` if didnt do it yet!")
     end
     LoadGangs() -- Init
 
